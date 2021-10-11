@@ -24,7 +24,7 @@ export const Introduction = () => {
           artificial intelligence.
         </h4>
       </div>
-      <video autoplay muted loop>
+      <video autoplay muted loop style={{ width: 500, height: 500 }}>
         <source src={VideoCod} type='video/mp4' />
       </video>
     </Grid>
