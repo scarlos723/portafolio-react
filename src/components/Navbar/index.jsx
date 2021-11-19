@@ -13,7 +13,7 @@ export const Navbar = () => {
           <li> <a href='Works'>Works</a></li>
           <li> <a href='/skills'> Skills </a> </li>
           <li> <a href='/education'> Education </a>  </li>
-          <li> <a href='/constact'> Contact</a></li>
+          <li> <a href='/contact'> Contact</a></li>
         </Ul>
 
       </Menu>

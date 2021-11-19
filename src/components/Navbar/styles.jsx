@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components'
 const pulseAnimation = keyframes`
   0% { box-shadow: 0px 0px 0px #A6048B  }
   25% { box-shadow: 0px 0px 2px #A6048B  }
-  50% { box-shadow: 0px 0px 10px #A6048B  }
+  50% { box-shadow: 0px 0px 20px #A6048B  }
   75% { box-shadow: 0px 0px 2px #A6048B  }
   100% { box-shadow: 0px 0px 0px #A6048B  }
 
@@ -26,6 +26,8 @@ export const Head = styled.div`
   grid-template-columns: 1fr 1fr;
   /*box-shadow: 0px 0.2px 10px 0px black;*/
   padding: 0px 40px;
+  position: absolute;
+  
 `
 
 export const Icon = styled.div`
