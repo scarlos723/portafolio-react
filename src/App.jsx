@@ -13,7 +13,7 @@ export const App = () => {
   const [show, setShow] = useState({
     Int: false,
     Sk: false,
-    Ed: true,
+    Ed: false,
     Cont: false
   })
   const imagesCity = {
