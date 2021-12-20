@@ -17,10 +17,26 @@ const PulseTextKeyframes = keyframes`
 
 `
 
+const GiroKeyframes = keyframes`
+  0%{
+    transform:rotate(0deg);
+  }
+  50%{
+    transform:rotate(180deg);
+  }
+  100%{
+    transform: rotate(359deg);
+  }
+  
+`
+
 export const PulseAnimation = ({ time = '1s', type = 'ease' } = {}) => css`
   animation: ${time} ${PulseKeyframes} ${type};
 `
 
 export const PulseTextAnimation = ({ time = '1s', type = 'ease' } = {}) => css`
   animation: ${time} ${PulseTextKeyframes} ${type};
+`
+export const GiroAnimate = ({ time = '1s', type = 'linear' } = {}) => css`
+animation: ${time} ${GiroKeyframes} ${type} infinite;
 `

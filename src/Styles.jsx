@@ -10,6 +10,8 @@ export const Main = styled.main`
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 0px;
+  position:relative;
+  perspective: 700px;
 `
 export const FilterArea = styled.div`
   position:absolute;
@@ -105,30 +107,38 @@ const intStyles = {
   start: css`
     background-color: #2c387ca6;
     box-shadow:0px 20px 50px 0px  #73eaff97;
-    transform: rotateY(-39deg) rotateZ(7deg) scale(0.2) ;
-    top:10px;
-    left: -320px;
+    transform: rotateY(40deg) scale(0.2)  ;
+    top:-100px;
+    left: -260px;
     z-index:1;
+    width:70%;
     
   `,
   end: css`
     background-color: #0c0b31dd;
     box-shadow: 0px 20px 50px 0px  #73eaffc3;
-    transform: rotatey(0deg) rotateZ(0deg) scale(.8) ;
+    transform:rotateY(0deg)  scale(0.8) ;
     left:0;
     top:50px;
     z-index:10;
+    width:100%;
   `
 }
 export const IntBase = styled(Section)`
   ${intStyles.start}
-  background-color:black;
+  background-color:#254652;
   box-shadow:none;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 
 `
 
 export const SectionInt = styled(Section)`
-  ${intStyles.start}
+  
+    ${intStyles.start}
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
   
   ${props => props.dep
     ? useAnimation(intStyles.start,
@@ -147,22 +157,26 @@ const skStyles = {
   start: css`
     background-color: #4400c279;
     box-shadow:0px 10px 20px 0px hotpink;
-    transform:rotatey(0deg) rotateZ(5deg) scale(0.1);
+    transform:rotateY(10deg) scale(0.13);
+    width:80%;
     top:160px;
-    left: 500px;
+    left: -130px;
     z-index:1;
   `,
   end: css`
-    background-color: #4400c2;
+    background-color: #4400c279;
     box-shadow:0px 0px 20px 5px hotpink;
-    transform: matrix(1,0,0,1,0,0) scale(.6);
+    transform: rotateY(0deg) scale(.8);
     left:0;
+    top:0;
     z-index:10;
+    width:100%;
   `
 }
 export const SectionSk = styled(Section)`
   ${skStyles.start}
-
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
  
 
   ${props => props.dep

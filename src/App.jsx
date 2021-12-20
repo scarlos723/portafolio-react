@@ -12,14 +12,14 @@ import { Contact } from './components/Contact'
 export const App = () => {
   const [show, setShow] = useState({
     Int: false,
-    Sk: false,
+    Sk: true,
     Ed: false,
     Cont: false
   })
   const imagesCity = {
-    city1: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7cf6f771357587.5bc2c0e91e305.png',
-    city2: 'https://p4.wallpaperbetter.com/wallpaper/664/221/183/digital-art-cyber-city-cyberpunk-cats-hd-wallpaper-preview.jpg',
-    city3: 'https://img.wallpapersafari.com/desktop/1680/1050/81/2/ftXPBl.jpg',
+    city1: 'https://ak.picdn.net/shutterstock/videos/21253474/thumb/1.jpg',
+    city2: 'https://c.wallhere.com/photos/77/40/city_cyberpunk_ball_Moon_bright_purple_night_neon-1859139.jpg!d',
+    city3: 'https://c.wallhere.com/photos/67/18/2560x1080_px_cyberpunk_neon-1432891.jpg!d',
     city4: 'https://mocah.org/uploads/posts/4502432-blade-rrunner-dark-cyberpunk-cyber-movies-cyberpunk.jpg',
     city5: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/50239bdf-bf68-4795-9efc-9d03917120d0/de2anuv-66a0e40e-d3c1-4443-ad49-2e075ee12767.jpg',
     city6: 'https://i.pinimg.com/originals/29/3f/4a/293f4a4edd57a58dd4159e687e3e5e98.jpg',
@@ -50,53 +50,50 @@ export const App = () => {
 
         </Menu>
       </Head>
-      <Main bgImg={imagesCity.cityGif1}>
+      <Main bgImg={imagesCity.city2}>
 
-        <section>
-          <IntBase />
-          <SectionInt
-            dep={show.Int} onClick={() => setShow({
-              Sk: false,
-              Ed: false,
-              Cont: false,
-              Int: !show.Int
-            })}
-          >
-            <Introduction />
-          </SectionInt>
-          <SectionSk
-            dep={show.Sk} onClick={() => setShow({
-              Int: false,
-              Ed: false,
-              Cont: false,
-              Sk: !show.Sk
-            })}
-          >
-            <Skills />
-          </SectionSk>
-          <SectionEd
-            dep={show.Ed} onClick={() => setShow({
-              Int: false,
-              Cont: false,
-              Sk: false,
-              Ed: !show.Ed
+        <IntBase />
+        <SectionInt
+          dep={show.Int} onClick={() => setShow({
+            Sk: false,
+            Ed: false,
+            Cont: false,
+            Int: !show.Int
+          })}
+        >
+          <Introduction />
+        </SectionInt>
+        <SectionSk
+          dep={show.Sk} onClick={() => setShow({
+            Int: false,
+            Ed: false,
+            Cont: false,
+            Sk: !show.Sk
+          })}
+        >
+          <Skills />
+        </SectionSk>
+        <SectionEd
+          dep={show.Ed} onClick={() => setShow({
+            Int: false,
+            Cont: false,
+            Sk: false,
+            Ed: !show.Ed
 
-            })}
-          >
-            <Education />
-          </SectionEd>
-          <SectionCont
-            dep={show.Cont} onClick={() => setShow({
-              Int: false,
-              Ed: false,
-              Sk: false,
-              Cont: !show.Cont
-            })}
-          >
-            <Contact />
-          </SectionCont>
-
-        </section>
+          })}
+        >
+          <Education />
+        </SectionEd>
+        <SectionCont
+          dep={show.Cont} onClick={() => setShow({
+            Int: false,
+            Ed: false,
+            Sk: false,
+            Cont: !show.Cont
+          })}
+        >
+          <Contact />
+        </SectionCont>
 
       </Main>
     </>

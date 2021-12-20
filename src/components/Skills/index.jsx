@@ -1,57 +1,67 @@
 import React from 'react'
-import { Grid, Col, Ul } from './styles'
-
+import { Grid, Col, Ul, CustomSiReact } from './styles'
+import {
+  ImHtmlFive2,
+  ImCss3
+} from 'react-icons/im'
+import {
+  IoLogoSass
+} from 'react-icons/io'
+import {
+  SiJavascript,
+  SiAngularjs,
+  SiLaravel,
+  SiBootstrap
+} from 'react-icons/si'
+import { DiMaterializecss } from 'react-icons/di'
 export const Skills = () => {
   return (
     <>
       <Grid>
         <Col>
-          <p>
-            <h2>Frontend Development</h2>
-          </p>
-          <p>
-            <h4>Languages</h4>
-          </p>
+
+          <h2>Frontend Development</h2>
+
+          <h4>Languages</h4>
+
           <Ul>
-            <li> HTML </li>
-            <li> CSS </li>
-            <li> Sass</li>
-            <li> JavaScript </li>
+            <li> <ImHtmlFive2 size={40} color='white' /> HTML </li>
+            <li> <ImCss3 size={40} color='white' />CSS </li>
+            <li> <IoLogoSass size={40} color='white' /> Sass</li>
+            <li> <SiJavascript size={40} color='white' />JavaScript </li>
           </Ul>
-          <p>
-            <h4>Frameworks</h4>
-          </p>
+
+          <h4>Frameworks</h4>
+
           <Ul>
-            <li>Materialize</li>
-            <li>Bootstrap</li>
-            <li>React</li>
-            <li>AngUlar</li>
-            <li>Laravel</li>
-            <li>Django</li>
+            <li> <CustomSiReact size={40} color='white' />React</li>
+            <li><SiAngularjs size={40} color='white' />Angular</li>
+            <li><SiLaravel size={40} color='white' />Laravel</li>
+            <li><DiMaterializecss size={40} color='white' />Materialize</li>
+            <li><SiBootstrap size={40} color='white' />Bootstrap</li>
+
           </Ul>
         </Col>
         <Col>
-          <p>
-            <h2>Backend Development</h2>
-          </p>
-          <p>
-            <h4>Languages</h4>
-          </p>
+
+          <h2>Backend Development</h2>
+
+          <h4>Languages</h4>
+
           <Ul>
             <li> Python </li>
             <li> PHP </li>
-            <li> JavaScript </li>
           </Ul>
-          <p>
-            <h4>Frameworks</h4>
-          </p>
+
+          <h4>Frameworks</h4>
+
           <Ul>
             <li>Laravel</li>
             <li>Django</li>
           </Ul>
-          <p>
-            <h4>Databases</h4>
-          </p>
+
+          <h4>Databases</h4>
+
           <Ul>
             <li>MySQL</li>
             <li>PostgreSQL</li>
@@ -59,9 +69,9 @@ export const Skills = () => {
           </Ul>
         </Col>
         <Col>
-          <p>
-            <h2>Machine Learning and Others</h2>
-          </p>
+
+          <h2>Machine Learning and Others</h2>
+
           <h4>Languages</h4>
           <Ul>
             <li>Python</li>
